@@ -37,6 +37,26 @@
 			image-rendering: pixelated;
 			-ms-interpolation-mode: nearest-neighbor;
 		}
+.container {
+  position: relative;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 15px;
+  font-size: 18px;
+}
+
+img { 
+  width: 50%;
+  height: auto;
+  opacity: 0.3;
+}
+
+
+
+
 	</style>
 </head>
 
@@ -115,7 +135,10 @@ img:hover {
   <img src="wh.png" alt="WH">
 </a>
 
-
+<div class="container">
+  <img src="qr.png" alt="QR code" width="100" height="250">
+  <div class="bottomleft">Bottom Left</div>
+</div>
 
 </body>
 
